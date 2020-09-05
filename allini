@@ -1,6 +1,8 @@
 ;设置规则标志位
 surge_ruleset=DIRECT,rules/LocalAreaNetwork.list
 surge_ruleset=DIRECT,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Unbreak.list
+surge_ruleset=DIRECT,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/China.list
+surge_ruleset=DIRECT,[]GEOIP,CN
 surge_ruleset=🛑 拦截连接,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Hijacking.list
 surge_ruleset=🛑 拦截连接,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Advertising.list
 surge_ruleset=🎥 NETFLIX,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Netflix.list
@@ -10,31 +12,33 @@ surge_ruleset=🍎 苹果服务,https://raw.githubusercontent.com/ConnersHua/Pro
 surge_ruleset=🔰 国外网站,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/Global.list
 surge_ruleset=👾 微软服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
 surge_ruleset=👾 微软服务,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
-surge_ruleset=DIRECT,https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/China.list
-surge_ruleset=DIRECT,[]GEOIP,CN
+surge_ruleset=🎮 游戏,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
+surge_ruleset=🎮 游戏,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+surge_ruleset=🎮 游戏,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list
 surge_ruleset=🐟 漏网之鱼,[]FINAL
 ;设置规则标志位
 
 ;设置分组标志位
-custom_proxy_group=🔗 手动切点`select`[]🖐 手动切换`[]🗲 延迟最低`[]✈ 故障切换`[]🇭🇰 香港均衡`[]🇹🇼 台湾均衡`[]🇸🇬 狮城均衡`[]🇯🇵 日本均衡`[]🇺🇲 美国均衡`[]🇭🇰 香港手动`[]🇹🇼 台湾手动`[]🇸🇬 狮城手动`[]🇯🇵 日本手动`[]🇺🇲 美国手动`[]DIRECT`[]🛑 拦截连接
+custom_proxy_group=🔗 主策略`select`[]🖐 手动切换`[]🗲 延迟最低`[]✈ 故障切换`[]🇭🇰 香港均衡`[]🇹🇼 台湾均衡`[]🇸🇬 狮城均衡`[]🇯🇵 日本均衡`[]🇺🇲 美国均衡`[]🇭🇰 香港手动`[]🇹🇼 台湾手动`[]🇸🇬 狮城手动`[]🇯🇵 日本手动`[]🇺🇲 美国手动`[]DIRECT`[]🛑 拦截连接
 custom_proxy_group=🖐 手动切换`select`.*
-custom_proxy_group=🔰 国外网站`select`[]🔗 手动切点`[]🖐 手动切换`[]🗲 延迟最低`[]✈ 故障切换`[]🇭🇰 香港均衡`[]🇹🇼 台湾均衡`[]🇸🇬 狮城均衡`[]🇯🇵 日本均衡`[]🇺🇲 美国均衡`[]🇭🇰 香港手动`[]🇹🇼 台湾手动`[]🇸🇬 狮城手动`[]🇯🇵 日本手动`[]🇺🇲 美国手动`[]DIRECT
-custom_proxy_group=📲 电报吹水`select`[]🔗 手动切点`[]🖐 手动切换`[]🗲 延迟最低`[]✈ 故障切换`[]DIRECT
-custom_proxy_group=🎥 NETFLIX`select`[]🎥 奈非节点`[]🔗 手动切点`[]🖐 手动切换`[]🗲 延迟最低`[]✈ 故障切换
-custom_proxy_group=🌍 国际媒体`select`[]🔗 手动切点`[]🖐 手动切换`[]🗲 延迟最低`[]✈ 故障切换`[]🇭🇰 香港均衡`[]🇹🇼 台湾均衡`[]🇸🇬 狮城均衡`[]🇯🇵 日本均衡`[]🇺🇲 美国均衡`[]🇭🇰 香港手动`[]🇹🇼 台湾手动`[]🇸🇬 狮城手动`[]🇯🇵 日本手动`[]🇺🇲 美国手动`[]DIRECT
-custom_proxy_group=🍎 苹果服务`select`[]DIRECT`[]🔗 手动切点`[]🖐 手动切换`[]🇺🇲 美国均衡`[]🇺🇲 美国手动
-custom_proxy_group=👾 微软服务`select`[]DIRECT`[]🔗 手动切点`[]🖐 手动切换`[]🇺🇲 美国均衡`[]🇺🇲 美国手动
-custom_proxy_group=🐟 漏网之鱼`select`[]🔗 手动切点`[]🖐 手动切换`[]🗲 延迟最低`[]✈ 故障切换`[]DIRECT`[]🛑 拦截连接
+custom_proxy_group=🔰 国外网站`select`[]🔗 主策略`[]🖐 手动切换`[]🗲 延迟最低`[]✈ 故障切换`[]🇭🇰 香港均衡`[]🇹🇼 台湾均衡`[]🇸🇬 狮城均衡`[]🇯🇵 日本均衡`[]🇺🇲 美国均衡`[]🇭🇰 香港手动`[]🇹🇼 台湾手动`[]🇸🇬 狮城手动`[]🇯🇵 日本手动`[]🇺🇲 美国手动`[]DIRECT
+custom_proxy_group=📲 电报吹水`select`[]🔗 主策略`[]🖐 手动切换`[]🗲 延迟最低`[]✈ 故障切换`[]DIRECT
+custom_proxy_group=🎥 NETFLIX`select`[]🎥 奈非节点`[]🔗 主策略`[]🖐 手动切换`[]🗲 延迟最低`[]✈ 故障切换
+custom_proxy_group=🌍 国际媒体`select`[]🔗 主策略`[]🖐 手动切换`[]🗲 延迟最低`[]✈ 故障切换`[]🇭🇰 香港均衡`[]🇹🇼 台湾均衡`[]🇸🇬 狮城均衡`[]🇯🇵 日本均衡`[]🇺🇲 美国均衡`[]🇭🇰 香港手动`[]🇹🇼 台湾手动`[]🇸🇬 狮城手动`[]🇯🇵 日本手动`[]🇺🇲 美国手动`[]DIRECT
+custom_proxy_group=🎮 游戏`select`[]DIRECT`[]🔗 主策略`[]🖐 手动切换`[]🇹🇼 台湾手动`[]🇸🇬 狮城手动`[]🇯🇵 日本手动
+custom_proxy_group=🍎 苹果服务`select`[]DIRECT`[]🔗 主策略`[]🖐 手动切换`[]🇺🇲 美国均衡`[]🇺🇲 美国手动
+custom_proxy_group=👾 微软服务`select`[]DIRECT`[]🔗 主策略`[]🖐 手动切换`[]🇺🇲 美国均衡`[]🇺🇲 美国手动
+custom_proxy_group=🐟 漏网之鱼`select`[]🔗 主策略`[]🖐 手动切换`[]🗲 延迟最低`[]✈ 故障切换`[]DIRECT
 custom_proxy_group=🎥 奈非节点`select`(NF|解锁|Netflix|NETFLIX)
 custom_proxy_group=🇭🇰 香港手动`select`(港|HK|HONG|Hong|HGC)
 custom_proxy_group=🇹🇼 台湾手动`select`(台|新北|彰化|TW)
 custom_proxy_group=🇸🇬 狮城手动`select`(新|狮城|SG)
-custom_proxy_group=🇯🇵 日本手动`select`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP)
+custom_proxy_group=🇯🇵 日本手动`select`(日本|东京|大阪|日|埼玉|JP)
 custom_proxy_group=🇺🇲 美国手动`select`(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US)
 custom_proxy_group=🇭🇰 香港均衡`url-test`(港|HK|HONG|Hong|HGC)`http://www.gstatic.com/generate_204`300
 custom_proxy_group=🇹🇼 台湾均衡`url-test`(台|新北|彰化|TW)`http://www.gstatic.com/generate_204`300
 custom_proxy_group=🇸🇬 狮城均衡`url-test`(新|狮城|SG)`http://www.gstatic.com/generate_204`300
-custom_proxy_group=🇯🇵 日本均衡`url-test`(日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP)`http://www.gstatic.com/generate_204`300
+custom_proxy_group=🇯🇵 日本均衡`url-test`(日本|东京|大阪|日|埼玉|JP)`http://www.gstatic.com/generate_204`300
 custom_proxy_group=🇺🇲 美国均衡`url-test`(美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US)`http://www.gstatic.com/generate_204`300
 custom_proxy_group=🗲 延迟最低`url-test`.*`http://www.gstatic.com/generate_204`300
 custom_proxy_group=✈ 故障切换`fallback`.*`http://www.gstatic.com/generate_204`300
